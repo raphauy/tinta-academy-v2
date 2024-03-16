@@ -12,7 +12,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { toast } from "@/components/ui/use-toast"
 import { useEffect, useState } from "react"
 import { createAction, getUserDAO, updateAction } from "../_services/actions"
-import { ROLES } from "../_services/services"
+import { ROLES } from "../columns"
 
 const formSchema = z.object({  
   nombre: z.string().optional(),

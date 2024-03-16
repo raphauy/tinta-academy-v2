@@ -4,7 +4,7 @@ import { getUsersDAO } from "./_services/actions"
 import { columns } from "./columns"
 import { DataTable } from "./_components/data-table"
  
-export default async function WinesPage() {
+export default async function UsersPage() {
   
   const users= await getUsersDAO()
 

@@ -10,6 +10,8 @@ import { DialogComponent } from "./_components/main-dialog"
 import { UserDAO } from "./_services/actions"
 import { DeleteDialog } from "./_components/delete-dialog"
 
+export const ROLES = ['user', 'admin'] as const;
+
 export const columns: ColumnDef<UserDAO>[] = [
   {
     accessorKey: "image",
