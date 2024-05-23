@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils'
 import { GeistSans } from "geist/font"
 import type { Metadata } from 'next'
 import './globals.css'
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: 'Tinta Academy',
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <SessionProvider session={session}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
+            <Analytics />
             <ConfettiProvider />
             <Toaster />
             <TailwindIndicator />
